@@ -1,0 +1,29 @@
+function CheckCars(val)
+{
+ if(val=='-')
+  document.getElementById("a").value="Fare/Hr";
+ if(val=='1')
+  document.getElementById("a").value="Rs.3,000/Hr";
+ if(val=='2')
+  document.getElementById("a").value="Rs.6,000/Hr";
+ if(val=='3')
+  document.getElementById("a").value="Rs.4,000/Hr";
+ if(val=='4')
+  document.getElementById("a").value="Rs.5,000/Hr";
+ if(val=='5')
+  document.getElementById("a").value="Rs.500/Hr";
+ if(val=='6')
+  document.getElementById("a").value="Rs.400/Hr";
+ if(val=='7')
+  document.getElementById("a").value="Rs.900/Hr";
+ if(val=='8')
+  document.getElementById("a").value="Rs.800/Hr";
+ if(val=='9')
+  document.getElementById("a").value="Rs.1,000/Hr";
+ if(val=='10')
+  document.getElementById("a").value="Rs.1,500/Hr";
+ if(val=='11')
+  document.getElementById("a").value="Rs.10,000/Hr";
+ if(val=='12')
+  document.getElementById("a").value="Rs.8,000/Hr";
+}

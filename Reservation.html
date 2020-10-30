@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <link rel="icon" type="image/png" href="Images/hotelIcon.png">
+    <link href="Reservation.css" rel="stylesheet" />
+    <script type="text/javascript" src="Reservation.js"></script>
+  </head>
+  <body>
+    <div id="hero">
+        <div id="hero-overlay">
+          <h1>Book&nbsp&nbsp&nbsp&nbspWith&nbsp&nbsp&nbsp&nbspUs!</h1>
+            <div class="registration_box">
+              <form action="" method="get" onsubmit="return myfun();"><!--post is more prefered than get.by default there is get.-->
+                <legend align="center"><b>Reservation Form</b></legend>
+                  First Name <input type="text" id="first_name" value="" placeholder="Enter First Name" onkeypress="hide1()"><span class="error" id="message1">*Enter First Name</span><br />
+                  Last Name<input type ="text" id="last_name" value="" placeholder="Enter Last Name" onkeypress="hide2()"><span class="error" id="message2">*Enter Last Name</span><br />
+              <br />Email ID&nbsp&nbsp<input type ="email" id="email" value="" placeholder="Enter Email" onkeypress="hide3()"><span class="error" id="message3">*Enter Email</span><br />
+              <br />Gender&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="gen">Male
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="gen">Female<br />
+              <br />Phone Number&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="tel" id="mobile" value="" placeholder="Enter Phone Number" onkeypress="hide4();"><span class="error" id="message4" style="color:red"></span><br />
+              <br />Arrival Date&nbsp&nbsp<input type ="date">&nbsp&nbsp&nbsp&nbspDeparture Date&nbsp&nbsp<input type ="date"><br />
+              <br />Room Types&nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(1);"><b>Superior</b>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(2);"><b>Executive</b>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(3);"><b>Pacific</b>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(4);"><b>Cabana</b>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(5);"><b>Suite</b>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <input type  ="radio" name="room" onclick="CheckFare(6);"><b>Deluxe</b><br />
+                    <br/>Fare
+                    <input type="text" id="a" value="Fare/Day" readonly />
+              <br />Adults
+                    <select>
+                      <option>-</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                    </select>
+                  Children
+                    <select>
+                      <option>-</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                    </select>
+              <br />Select State
+                    <select>
+                      <option>-</option>
+                      <option>Andhra Pradesh</option>
+                      <option>Assam</option>
+                      <option>Bihar</option>
+                      <option>Delhi</option>
+                      <option>Gujrat</option>
+                      <option>Haryana</option>
+                      <option>Jammu & Kashmir</option>
+                      <option>Kerela</option>
+                      <option>Uttar Pradesh</option>
+                    </select><br />
+              <br />Address
+                    <br />
+                    <textarea rows="5" cols="50"></textarea><br />
+              <br /><b>ID Proof Details</b>&nbsp&nbsp&nbsp<input type="file" accept="image/*"><br />
+                    <br /><center><input type="submit">&nbsp&nbsp&nbsp&nbsp<input type="reset"></center>
+              </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="Home Page.html">Front Office</a></li>
+              <li><a href="Reservation.html">Reservations</a></li>
+              <li><a href="TravelAgency.html">Travel Agency</a></li>
+              <li><a href="Health.html">Spa/Health Club</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="#">Support</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Feedback.html">Guest Response/Feedback</a></li>
+                    <li><a href="Internet Access.html">Internet Access</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </nav>
+    </div>
+  </body>
+</html>

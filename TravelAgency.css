@@ -1,0 +1,213 @@
+body
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*CSS for background image and overlay starts here*/
+
+.hero /* hero image in html is a large image with texts over it */
+{
+  background-image: url("Images/travel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh; /* vh(viewport height) and vw(viewport width) are css units.The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. 100vh here means that always 100% of the screen height will be considered */
+}
+
+.hero-overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9); /*sets the colour and opacity value, the first three being values of red green and blue and the last being alpha which is the opacity value from 0 to 1, 0 being fully transparent and 1 being opaque*/
+  height: 100%;
+  width: 100%;
+}
+
+/*CSS for background image and overlay ends here*/
+
+
+/*CSS for menu bar starts here*/
+
+nav
+{
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+}
+
+nav ul
+{
+  margin-top: 0;
+}
+
+nav ul li
+{
+  font-size: 20px;
+  display: inline-block;
+  height: 65px;
+  opacity: 0.8;
+}
+
+nav ul li a
+{
+  color: white;
+  text-decoration: none;
+  line-height: 65px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background 0.4s;
+}
+
+nav ul li a:hover
+{
+  background: green;
+  color: white;
+}
+
+.dropdown-menu
+{
+  display: none;
+  position: absolute;
+  background-color: black;
+  padding-left: 0px;
+}
+
+.dropdown-menu li
+{
+  display: block;
+  width: 304px;
+}
+
+.dropdown-menu li a
+{
+  width: 300px;
+  padding-right: 0px;
+  padding-left: 4px;
+}
+
+.dropdown:hover .dropdown-menu
+{
+  display: block;
+}
+
+/*CSS for menu bar ends here*/
+
+
+/*CSS for travel list items starts here*/
+
+ul.travel{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 300px;
+}
+
+ul.travel li{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    transform: rotate(45deg);
+    transition: 0.5;
+    margin: -30px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+ul.travel li:hover
+{
+  opacity: 1;
+}
+
+ul.travel li.item1
+{
+    top: 0;
+    left: 0;
+}
+
+ul.travel li.item2
+{
+    bottom: 0;
+    left: 25%;
+}
+
+ul.travel li.item3
+{
+    top: 0;
+    left: 50%;
+}
+
+ul.travel li.item4
+{
+    bottom: 0;
+    left: 75%;
+}
+
+ul.travel li.item5
+{
+    top: 0;
+    left: 100%;
+}
+
+a.bg1
+{
+    background: url("Images/car.jpg");
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a.bg2
+{
+    background: url("Images/taxi.jpg");
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a.bg3
+{
+    background: url("Images/airplane.jpg");
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a.bg4
+{
+    background: url("Images/train.jpg");
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a.bg5
+{
+    background: url("Images/bus.jpg");
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Internet Access</title>
+    <link rel="icon" type="image/png" href="Images/hotelIcon.png">
+    <link href="Internet Access.css" rel="stylesheet" />
+    <script type="text/javascript" src="Internet Access.js"></script>
+  </head>
+  <body>
+    <div id="hero">
+        <div id="hero-overlay">
+          <h1>&nbsp&nbsp&nbsp&nbspConnect&nbsp&nbsp&nbsp&nbsp&nbspMe!</h1>
+            <div class="registration_box">
+                <form action="" method="get" onsubmit="return myfun()"><!--post is more prefered than get.by default there is get.-->
+                  <div class="form_group">
+                    <label for="Guest_ID">Guess ID&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" placeholder="Enter Your Unique Guest ID" id="GuestId" onkeypress="hide1()"><span class="error" id="message1">*Enter Valid Guest ID</span>
+                    <br /><br /><label for="password">Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type ="password" placeholder="Enter Password" id="Password" onkeypress="hide2()"><span class="error" id="message2">*Enter Valid Password</span>
+                    <br /><br /><label for="phone_number">Phone Number&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type ="tel" id="mobile" value="" placeholder="Enter Phone Number" onkeypress="hide3()"><span class="error" id="message3" style="color:red"></span><br />
+                    <br /><br /><input type="submit" value="Connect">
+                   </div>    
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="Home Page.html">Front Office</a></li>
+              <li><a href="Reservation.html">Reservations</a></li>
+              <li><a href="TravelAgency.html">Travel Agency</a></li>
+              <li><a href="Health.html">Spa/Health Club</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="#">Support</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Feedback.html">Guest Response/Feedback</a></li>
+                    <li><a href="Internet Access.html">Internet Access</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </nav>
+    </div>
+  </body>
+</html>

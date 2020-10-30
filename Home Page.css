@@ -1,0 +1,308 @@
+/*CSS for menu bar starts here*/
+
+body
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav
+{
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  z-index: 2;
+}
+
+nav ul
+{
+  margin-top: 0;
+}
+
+nav ul li
+{
+  font-size: 20px;
+  opacity: 0.9;
+  display: inline-block;
+  height: 65px;
+}
+
+nav ul li a
+{
+  color: white;
+  text-decoration: none;
+  line-height: 65px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background 0.4s;
+}
+
+nav ul li a:hover
+{
+  background: green;
+  color: white;
+}
+
+.dropdown-menu
+{
+  display: none;
+  position: absolute;
+  background-color: black;
+  padding-left: 0px;
+}
+
+.dropdown-menu li
+{
+  display: block;
+  width: 304px;
+}
+
+.dropdown-menu li a
+{
+  width: 300px;
+  padding-right: 0px;
+  padding-left: 4px;
+}
+
+.dropdown:hover .dropdown-menu
+{
+  display: block;
+}
+
+/*CSS for menu bar ends here*/
+
+
+/*CSS for background image and overlay starts here*/
+
+#hero /* hero image in html is a large image with texts over it */
+{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh; /* vh(viewport height) and vw(viewport width) are css units.The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. 100vh here means that always 100% of the screen height will be considered */
+}
+
+#hero-overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6); /*sets the colour and opacity value, the first three being values of red green and blue and the last being alpha which is the opacity value from 0 to 1, 0 being fully transparent and 1 being opaque*/
+  height: 100%;
+  width: 100%;
+}
+
+/*CSS for background image and overlay ends here*/
+
+
+h1
+{
+  font-family: "french script mt";
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 5vh;
+  top: 0vh;
+  font-size: 90px;
+}
+
+
+
+/*CSS for Slider starts here*/
+
+/* * {box-sizing: border-box} */
+.mySlides {display: none}
+img {vertical-align: middle;width: 100%;height: 900px;}
+
+.slideshow-container
+{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  top: 8.9vh;
+  left: 0vh;
+}
+
+
+
+.prev, .next        /* Next & previous buttons */
+{
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next             /* Position the "next button" to the right */
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover        /* On hover, add a black background color with a little bit see-through */
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text               /* Caption text */
+{
+  color: #d9d9d9;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 6%;
+  left: -35%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext         /* Number text (1/3 etc) */
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 96%;
+}
+
+#dots             /* postion of the three dots as a whole */
+{
+    top: 85%;
+    position: absolute;
+    left: 47%;
+}
+
+.dot
+{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #666666;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+	background-color: #1a1a1a;
+}
+
+.fade       /* Fading animation */
+{
+  -webkit-animation-name: fade;     
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px)     /* On smaller screens, decrease text size */
+{
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*CSS for Slider ends here*/
+
+
+
+/*CSS of text-box starts here*/
+
+.text_box
+{
+  width: 700px;
+  height: 413px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  top: 65%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-8%,-2.5%);
+  overflow: auto;
+}
+
+p
+{
+  padding: 20px 15px 0px;
+  text-align: justify;
+  font-size: 16px;
+  color: white;
+}
+
+/*CSS of text-box ends here*/
+
+
+
+
+/*CSS of animated button starts here*/
+
+.btn
+{
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: fantasy;
+    font-size: 17px;
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.btn:before
+{
+    content: '';
+    height: 45px;
+    width: 10px;
+    background-color: coral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) skewX(-25deg);
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn:hover:before
+{
+    width: 240px;
+    
+}
+
+/*CSS of animated button ends here*/

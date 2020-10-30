@@ -1,0 +1,316 @@
+body
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*CSS for background image and overlay starts here*/
+
+.hero /* hero image in html is a large image with texts over it */
+{
+  background-image: url("Images/restaurant.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  background-size: cover;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh; /* vh(viewport height) and vw(viewport width) are css units.The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. 100vh here means that always 100% of the screen height will be considered */
+}
+
+.hero-overlay
+{
+  position: absolute;
+  overflow: hidden; 
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9); /*sets the colour and opacity value, the first three being values of red green and blue and the last being alpha which is the opacity value from 0 to 1, 0 being fully transparent and 1 being opaque*/
+  height: 100%;
+  width: 100%;
+}
+
+/*CSS for background image and overlay ends here*/
+
+
+/*CSS for menu bar starts here*/
+
+nav
+{
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  z-index: 2;
+}
+
+nav ul
+{
+  margin-top: 0;
+}
+
+nav ul li
+{
+  font-size: 20px;
+  display: inline-block;
+  height: 65px;
+  opacity: 0.95;
+}
+
+nav ul li a
+{
+  color: white;
+  text-decoration: none;
+  line-height: 65px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background 0.4s;
+}
+
+nav ul li a:hover
+{
+  background: green;
+  color: white;
+}
+
+.dropdown-menu
+{
+  display: none;
+  position: absolute;
+  background-color: black;
+  padding-left: 0px;
+}
+
+.dropdown-menu li
+{
+  display: block;
+  width: 304px;
+}
+
+.dropdown-menu li a
+{
+  width: 300px;
+  padding-right: 0px;
+  padding-left: 4px;
+}
+
+.dropdown:hover .dropdown-menu
+{
+  display: block;
+}
+
+/*CSS for menu bar ends here*/
+
+h1
+{
+  font-family: "french script mt";
+  border: 2px solid coral;
+  text-align: center;
+  color: coral;
+  position: absolute;
+  left: 90vh;
+  bottom: 65vh;
+  font-size: 90px;
+}
+
+#menu
+{
+  width: 100%;
+  height: 518px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  top: 63%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  overflow-y: scroll;
+}
+
+/*CSS for Breakfast starts here*/
+
+.breakfast h2
+{
+  font-family: "freestyle script";
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 92vh;
+  bottom: 53vh;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.list1
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+}
+
+.list1 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list1 ul li
+{
+  padding: 5px;  
+}
+
+.list2
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.list2 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list2 ul li
+{
+  padding: 5px;  
+}
+
+/*CSS for Breakfast ends here*/
+
+/*CSS for Lunch starts here*/
+
+.lunch h2
+{
+  font-family: "freestyle script";
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 92vh;
+  bottom: -2vh;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.list3
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 95%;
+  left: 0%;
+}
+
+.list3 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list3 ul li
+{
+  padding: 5px;  
+}
+
+.list4
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 131%;
+  left: 0%;
+}
+
+.list4 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list4 ul li
+{
+  padding: 5px;  
+}
+
+/*CSS for Lunch ends here*/
+
+
+/*CSS for Dinner starts here*/
+
+.dinner h2
+{
+  font-family: "freestyle script";
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 92vh;
+  bottom: -56vh;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.list5
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 176%;
+  left: 0%;
+}
+
+.list5 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list5 ul li
+{
+  padding: 5px;  
+}
+
+.list6
+{
+  width: 100%;
+  font-family: "MV Boli", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 212%;
+  left: 0%;
+}
+
+.list6 h3
+{
+  position: absolute;
+  left: 3%;
+  bottom: 83%;
+  font-size: 25px;
+}
+
+.list6 ul li
+{
+  padding: 5px;  
+}
+
+/*CSS for Dinner ends here*/
